@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>TAREAS</h1>
+        <input type="text" id="filtratarea" class="buscador" placeholder="Buscar tarea">
+        <button id="addt" class="btn-addt" onclick="OpenCreadT()">Add Tarea</button>
+    </header>
+
+    <main id="cont-t1">
+        <ul id="list-t" class="cont-ul">
+
+        </ul>
+        <div class="sint" id="notarea">
+            <p>No hay tareas pendientes</p>
+            <img src="https://img.icons8.com/?size=100&id=119094&format=png&color=000000" alt="">
+        </div>
+    </main>
+
+    <dialog class="vent-creact" id="vent-ct">
+        <div>
+            <div class="header-form">
+                <h2>Nota</h2>
+                <img src="https://img.icons8.com/?size=100&id=85008&format=png&color=000000" alt="cerrar" onclick="CloseCreadT()" class="btn-img">
+            </div>
+
+            <form class="form-creact">
+                <div>
+                    <input class="input-tit" type="text" id="titt" placeholder="Titulo de la tarea....">
+                </div>
+                <div>
+                    <textarea class="input-desc" id="desct" placeholder="Descripcion de la tarea..."></textarea>
+                </div>
+                <div class="error-form" id="alert-error" style="display: none;">
+                    <img src="https://img.icons8.com/?size=100&id=63690&format=png&color=000000" alt="error">
+                    <p>Por favor complete los campos</p>
+                </div>
+                <div id="imp" class="import">
+                    <button type="button" class="import-1" onclick="impTarea(1)">Normal</button>
+                    <button type="button" class="import-2 " onclick="impTarea(2)">Importante</button>
+                    <button type="button" class="import-3" onclick="impTarea(3)">Urgente</button>
+                </div>
+                <div class="btn-form ">
+                    <button type="button" class="cancel-btn " onclick="CloseCreadT()">Cancelar</button>
+                    <button type="button" class="save-btn ">Guardar</button>
+                    <button type="button" class="save-edit ">Guardar Edit</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+
+
+    <script src="app.js "></script>
+</body>
+
+</html>

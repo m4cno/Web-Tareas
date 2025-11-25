@@ -1,0 +1,337 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        scroll-behavior: smooth;
+    }
+    
+     :root {
+        --1: #c9dffb;
+        --2: #0d66d4bd;
+        --3: #07356E;
+        --4: #E7F1FD;
+        --5: #66A6F5;
+        --6: #042143;
+        --7: #020C18;
+        --8: #170DD4;
+        --9: #ec8c87;
+        --10: rgb(240, 246, 251);
+        --11: rgb(244, 234, 106);
+    }
+    
+    body {
+        background-color: var(--1);
+        margin-top: 100px;
+    }
+    
+    header {
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        display: flex;
+        margin: 2% 3% 0 3%;
+        justify-content: space-between;
+        padding: 19px;
+        border-radius: 20px;
+        align-items: center;
+        background-color: var(--2);
+        box-shadow: 0 0 5px var(--3);
+        backdrop-filter: blur(2px);
+        width: 94%;
+        animation: subida 2s;
+    }
+    
+    h1 {
+        font-size: 20px;
+        color: var(--4);
+    }
+    
+    .buscador {
+        width: 40%;
+        height: 25px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 5px var(--4);
+    }
+    
+    .btn-addt {
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--4);
+        box-shadow: 0 0 10px var(--2);
+        color: var(--6);
+    }
+    
+    .btn-addt:hover {
+        box-shadow: 0 0 7px var(--4);
+        transition-duration: 0.6s;
+        cursor: pointer;
+    }
+    
+    .sint {
+        text-align: center;
+        margin-top: 200px;
+        font-size: 25px;
+        color: var(--10);
+        text-shadow: 0 1px 3px var(--2);
+        animation: bajada 2s;
+    }
+    
+    .sint img {
+        width: 60px;
+        margin: 20px;
+    }
+    /*formulario de creacion de la tarea*/
+    
+    .vent-creact::backdrop {
+        backdrop-filter: blur(1px);
+    }
+    
+    .vent-creact {
+        max-width: 500px;
+        margin: auto;
+        width: 70%;
+        height: 67%;
+        border: none;
+        padding: 15px;
+        border-radius: 15px;
+        background-color: var(--4);
+    }
+    
+    .header-form {
+        margin: 6px 10px;
+        display: flex;
+        justify-content: space-between;
+        color: var(--6);
+    }
+    
+    .btn-img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .btn-img:hover {
+        box-shadow: 0 0 5px var(--9);
+        background-color: var(--9);
+        transition-duration: 0.6s;
+    }
+    
+    .input-tit {
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .input-tit::placeholder {
+        color: var(--2);
+        padding: 15px;
+    }
+    
+    .input-desc {
+        margin-top: 20px;
+        width: 100%;
+        height: 35vh;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .input-desc::placeholder {
+        color: var(--2);
+        padding: 15px;
+    }
+    
+    .import {
+        display: flex;
+    }
+    
+    .import button {
+        border: none;
+        margin: 5px;
+        padding: 4px;
+        border-radius: 5px;
+        color: var(--3);
+    }
+    
+    .activo {
+        box-shadow: 0 0 3px var(--8);
+        transition: 1s;
+    }
+    
+    .import-1 {
+        background-color: var(--1);
+    }
+    
+    .import-2 {
+        background-color: var(--11);
+    }
+    
+    .import-3 {
+        background-color: var(--9);
+    }
+    
+    .import-1::selection {
+        box-shadow: #042143;
+    }
+    
+    .btn-form {
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px;
+    }
+    
+    .error-form img {
+        width: 20px;
+    }
+    
+    .error-form p {
+        color: var(--9);
+    }
+    
+    .cancel-btn {
+        margin-right: 7px;
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        color: var(--2);
+        background-color: var(--1);
+        cursor: pointer;
+    }
+    
+    .save-btn {
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        color: var(--4);
+        background-color: var(--2);
+        cursor: pointer;
+    }
+    
+    .save-edit {
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        color: var(--4);
+        background-color: var(--2);
+        cursor: pointer;
+        display: none;
+    }
+    /*ahora esto es para el main las tareas*/
+    
+    .cont-t {
+        background-color: var(--4);
+        margin: 12px;
+        width: 200px;
+        min-height: 21vh;
+        word-wrap: break-word;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 0 4px var(--5);
+        padding: 5px;
+        position: relative;
+    }
+    
+    .cont-t-2 {
+        background-color: var(--11);
+        margin: 12px;
+        width: 200px;
+        min-height: 21vh;
+        word-wrap: break-word;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 0 4px var(--5);
+        padding: 5px;
+        position: relative;
+    }
+    
+    .cont-t-3 {
+        background-color: var(--9);
+        margin: 12px;
+        width: 200px;
+        min-height: 21vh;
+        word-wrap: break-word;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 0 4px var(--5);
+        padding: 5px;
+        position: relative;
+    }
+    
+    .elim-t {
+        animation: eliminar 1s;
+    }
+    
+    .cont-t p,
+    .cont-t h2,
+    .cont-t-2 p,
+    .cont-t-2 h2,
+    .cont-t-3 p,
+    .cont-t-3 h2 {
+        margin: 10px;
+        color: var(--3);
+    }
+    
+    .cont-t input,
+    .cont-t-2 input,
+    .cont-t-3 input {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        cursor: pointer;
+    }
+    
+    .cont-ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .elim {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        width: 20px;
+        cursor: pointer;
+    }
+    
+    .edit {
+        position: absolute;
+        bottom: 8px;
+        right: 38px;
+        width: 20px;
+        cursor: pointer;
+    }
+    
+    @keyframes bajada {
+        0% {
+            opacity: 0;
+            transform: translateY(-70px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+    
+    @keyframes subida {
+        0% {
+            opacity: 0;
+            transform: translateY(70px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+    
+    @keyframes eliminar {
+        0% {
+            filter: blur(.01px);
+        }
+        100% {
+            filter: blur(12px);
+            opacity: 0
+        }
+    }

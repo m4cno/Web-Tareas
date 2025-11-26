@@ -93,7 +93,7 @@
         max-width: 500px;
         margin: auto;
         width: 70%;
-        height: 67%;
+        height: 70%;
         border: none;
         padding: 15px;
         border-radius: 15px;
@@ -185,7 +185,8 @@
     }
     
     .error-form img {
-        width: 20px;
+        width: 16px;
+        height: 16px;
     }
     
     .error-form p {

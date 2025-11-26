@@ -226,7 +226,7 @@
     .cont-t {
         background-color: var(--4);
         margin: 12px;
-        width: 200px;
+        width: 170px;
         min-height: 21vh;
         word-wrap: break-word;
         overflow: hidden;
@@ -239,7 +239,7 @@
     .cont-t-2 {
         background-color: var(--11);
         margin: 12px;
-        width: 200px;
+        width: 170px;
         min-height: 21vh;
         word-wrap: break-word;
         overflow: hidden;
@@ -252,7 +252,7 @@
     .cont-t-3 {
         background-color: var(--9);
         margin: 12px;
-        width: 200px;
+        width: 170px;
         min-height: 21vh;
         word-wrap: break-word;
         overflow: hidden;

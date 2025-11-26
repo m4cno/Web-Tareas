@@ -226,10 +226,8 @@
     .cont-t {
         background-color: var(--4);
         margin: 12px;
-        width: 30vw;
-        min-height: 16vh;
-        max-width: 180px;
-        max-height: 21vh;
+        width: 200px;
+        min-height: 21vh;
         word-wrap: break-word;
         overflow: hidden;
         border-radius: 12px;
@@ -241,10 +239,8 @@
     .cont-t-2 {
         background-color: var(--11);
         margin: 12px;
-        width: 30vw;
-        min-height: 16vh;
-        max-width: 180px;
-        max-height: 21vh;
+        width: 200px;
+        min-height: 21vh;
         word-wrap: break-word;
         overflow: hidden;
         border-radius: 12px;
@@ -256,10 +252,8 @@
     .cont-t-3 {
         background-color: var(--9);
         margin: 12px;
-        width: 30vw;
-        min-height: 16vh;
-        max-width: 180px;
-        max-height: 21vh;
+        width: 200px;
+        min-height: 21vh;
         word-wrap: break-word;
         overflow: hidden;
         border-radius: 12px;
